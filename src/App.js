@@ -9,14 +9,16 @@ import logo from './assets/logo.png';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/forestkids"> {/* Set the basename for GitHub Pages */}
       <div className="App">
-      <div className="logo-container">
+        <div className="logo-container">
           <img src={logo} alt="Forest Kids Logo" className="logo-image" />
         </div>
         <Header />
         <Routes>
-          <Route path="/" element={<Home />} />
+          {/* Add a route for the root ("/") path to load the homepage */}
+          <Route path="/" element={<Home />} /> 
+          <Route path="/home" element={<Home />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
