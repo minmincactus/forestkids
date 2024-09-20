@@ -1,0 +1,280 @@
+/* Import a cute font */
+@import url('https://fonts.googleapis.com/css2?family=Single+Day:wght@400;600&display=swap');
+
+/* Root colors */
+:root {
+  --primary-color: #f4e2ff;  /* Light Pink */
+  --secondary-color: #daffec; /* Light Cyan */
+  --accent-color: #FDFD96;    /* Light Yellow */
+  --text-color: #535b5a;
+  --gradient-start: #ffd0f8;  /* Light yellow */
+  --gradient-end: #fdffea;    /* Light red/pink */
+}
+
+/* Global Styles */
+
+body {
+  font-family: 'Single Day', sans-serif;
+  background-image: url('./assets/background.jpg'); /* Path to your image */
+  background-size: cover;  /* Ensures the image covers the entire viewport */
+  background-position: center;  /* Center the image */
+  background-repeat: no-repeat;  /* Prevents tiling of the image */
+  background-attachment: fixed;  /* Keeps the image fixed in place while scrolling */
+  color: var(--text-color);  /* Maintain the text color */
+  padding: 0;
+  margin: 0;
+  height: 100vh; /* Ensures it covers the full height of the viewport */
+}
+
+
+h2{
+  font-size: 3em;
+  color: #987dc5;
+  margin: 0px;
+}
+
+p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  color: var(--text-color);
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Center content */
+div {
+  margin: 20px 0;
+}
+
+button {
+  background-color: var(--accent-color);
+  border: none;
+  border-radius: 12px;
+  padding: 10px 10px;
+  font-size: 1.1em;
+  cursor: pointer;
+  
+}
+
+.header {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);  /* Adds a subtle shadow */
+  background-color: var(--primary-color);
+  padding: 5px;
+  border-radius: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;  /* Use flexbox on the entire header */
+  justify-content: center;  /* Center horizontally */
+  align-items: center;  /* Center vertically */
+  
+}
+
+.nav-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;  /* Space out the nav links evenly */
+  gap: 60px;
+  margin-left: -20px;
+}
+
+
+.nav-list li a {
+  font-size: 1.7em;
+  color: var(--text-color);
+  padding: 5;
+  border-radius: 15px;
+  transition: background-color 0.3s;
+}
+
+.nav-list li a:hover {
+  background-color: var(--secondary-color);
+  padding: 5px;
+  border-radius: 30px;
+}
+
+.logo-container {
+  text-align: center;
+  margin: 20px;
+}
+
+.logo-image {
+  width: 600px; /* Adjust the size here */
+  height: auto; /* Keeps the aspect ratio */
+  max-width: 100%; /* Ensures it never overflows the container */
+}
+
+.home-container {
+  display: flex;
+  justify-content: center;     /* Center the entire content on the page */
+  align-items: center;         /* Vertically center the content */
+  padding: 0;  /* Remove extra padding if any */
+  margin: 20;  
+}
+
+/* Flex container for image and text */
+.content {
+  display: flex;               /* Enables Flexbox */
+  justify-content: space-between;  /* Spreads the image and text apart */
+  align-items: center;         /* Vertically center both image and text */
+  max-width: 1000px;           /* Limit the maximum width of the content */
+  width: 100%;                 /* Ensures the content takes full width available */
+  padding-top: 20px;
+}
+.onion-image {
+  width: 300px;  /* Set a smaller width for the image */
+  height: auto;  /* Ensures the aspect ratio is maintained */
+
+}
+
+/* Text content styling */
+.text-content {
+  max-width: 600px;            /* Restricts the width of the text area */
+}
+
+.welcome-text {
+  font-size: 3rem;         /* Makes the text larger */
+  color: #987dc5;          /* Change the color (example: green) */
+  text-align: center;      /* Center the text (optional) */
+  margin-bottom: 10px;     /* Adds some space below the heading (optional) */
+}
+
+h1, p {
+  text-align: left;            /* Left-align the text */
+  margin: 0 0 20px 0;          /* Adds margin between the elements */
+}
+
+p {
+  font-size: 1.5rem;           /* Make the paragraph slightly bigger */
+  line-height: 1.6;            /* Increase line spacing for readability */
+}
+
+
+/* Footer Styles */
+.footer {
+  padding: 10px 20px;  /* Adds internal spacing (padding) */
+  text-align: center;  /* Centers the text content */
+}
+
+.footer p {
+  margin: 0;  /* Removes unnecessary margins from the text */
+  font-size: 0.9rem;  /* Optional: Makes the text smaller */
+  text-align: center;
+}
+
+/* Contact Form Styles */
+.contact-form-container {
+  max-width: 600px;
+  margin: 45px auto;
+  padding: 20px;
+  padding-right: 40px;
+  background-color: #f9f9f994;  /* Light background for contrast */
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);  /* Adds a subtle shadow */
+}
+
+.contact-form-container h2 {
+  text-align: center;
+  color: #b89ce7; 
+  font-size: 3rem;   /* Larger font size for the heading */
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.contact-form-container p {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 1.1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #d5cdef;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: 'Single Day', sans-serif;
+  color: var(--text-color);
+}
+
+.contact-form textarea {
+  height: 150px;
+  display: flex;         /* Use flexbox to align items inside the form */
+  flex-direction: column; 
+  align-items: center;
+  resize: vertical;
+  font-family: 'Single Day', sans-serif;
+  color: var(--text-color);
+}
+
+
+
+.contact-form button {
+  background-color: var(--accent-color);  /* Use your theme color for buttons */
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 1.1em;
+  cursor: pointer;
+  color: var(--text-color);
+  font-family: 'Single Day', sans-serif;
+  margin: 10px auto; 
+  /* Center the button */
+  display: block;        
+}
+
+.contact-form button:hover {
+  background-color: #ffcb46;  /* Lighter color on hover */
+}
+
+/* Styles for the gallery */
+/* Gallery grid layout */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid layout */
+  gap: 20px; /* Space between items */
+  padding: 20px;
+}
+
+/* Each gallery item */
+.gallery-item {
+  background-color: #f9f9f9; /* Light background */
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: transform 0.3s ease; /* Hover effect */
+}
+
+.gallery-item:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Styling for the images */
+.gallery-image {
+  width: 100%;
+  height: 150px; /* Fixed height for uniformity */
+  object-fit: cover; /* Crop the image to fit the box without distortion */
+  border-radius: 10px; /* Rounded corners */
+}
+
+/* Title styling */
+h3 {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  color: #85c1d2;
+}
+
