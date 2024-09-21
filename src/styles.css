@@ -127,6 +127,15 @@ button {
   width: 100%;                 /* Ensures the content takes full width available */
   padding-top: 20px;
 }
+
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;  /* Stack the image and text vertically */
+    align-items: center;     /* Center the content */
+    text-align: center;      /* Center the text for smaller screens */
+  }
+}
+
 .onion-image {
   width: 300px;  /* Set a smaller width for the image */
   height: auto;  /* Ensures the aspect ratio is maintained */
