@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/forestkids/static/css/main.c3d0cc3a.css",
+    "main.css": "/forestkids/static/css/main.2e5f7ee2.css",
     "main.js": "/forestkids/static/js/main.f020c2df.js",
     "static/js/453.d12028c7.chunk.js": "/forestkids/static/js/453.d12028c7.chunk.js",
     "static/media/bunnycloud.png": "/forestkids/static/media/bunnycloud.bc9bf050b02a6207dca0.png",
@@ -8,12 +8,12 @@
     "static/media/logo.png": "/forestkids/static/media/logo.b48212829f6bf44e1019.png",
     "static/media/background.jpg": "/forestkids/static/media/background.df6946a7f77543f1df7e.jpg",
     "index.html": "/forestkids/index.html",
-    "main.c3d0cc3a.css.map": "/forestkids/static/css/main.c3d0cc3a.css.map",
+    "main.2e5f7ee2.css.map": "/forestkids/static/css/main.2e5f7ee2.css.map",
     "main.f020c2df.js.map": "/forestkids/static/js/main.f020c2df.js.map",
     "453.d12028c7.chunk.js.map": "/forestkids/static/js/453.d12028c7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c3d0cc3a.css",
+    "static/css/main.2e5f7ee2.css",
     "static/js/main.f020c2df.js"
   ]
 }
