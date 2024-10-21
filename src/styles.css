@@ -75,6 +75,10 @@ button {
   align-items: center;  /* Center vertically */
   
 }
+/* Highlight the active page */
+.nav-list li a.active {
+  color: #bfa6ff;  /* Optional: change color */
+}
 
 .nav-list {
   list-style-type: none;
@@ -95,6 +99,7 @@ button {
 
 .nav-list li a:hover {
   background-color: var(--secondary-color);
+  color: #bfa6ff;  /* Optional: change color */
   padding: 5px;
   border-radius: 30px;
 }
@@ -258,41 +263,129 @@ p {
   background-color: #ffcb46;  /* Lighter color on hover */
 }
 
+.video-gallery {
+  padding: 20px;
+  margin-top: 0px; /* Adds space between the image and video galleries */
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.09); /* Subtle shadow */
+  background-color: #f9f9f9; /* Light background */
+  border-radius: 10px; /* Rounded corners */
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px; /* Ensures videos also have rounded corners */
+}
+
 /* Styles for the gallery */
 /* Gallery grid layout */
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid layout */
   gap: 20px; /* Space between items */
-  padding: 20px;
+  padding: 30px;
 }
 
-/* Each gallery item */
+/* Styling for the images */
+.gallery-image {
+  width: 100%;
+  height: 100%;
+   /* Adjust the aspect ratio (e.g., 4/3 or 16/9 depending on the look you want) */
+  object-fit: cover; /* Crop the image to fit the container while maintaining aspect ratio */
+  border-radius: 10px; /* Rounded corners */
+  transition: transform 0.3s ease; /* Optional: Adding a smooth transform on hover */
+}
+
 .gallery-item {
-  background-color: #f9f9f9; /* Light background */
+  background-color: rgba(201, 179, 255, 0.3);; /* Light background */
   padding: 10px;
   border-radius: 10px;
   text-align: center;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.09); /* Subtle shadow for depth */
   transition: transform 0.3s ease; /* Hover effect */
+  display: flex; /* Make the gallery item a flexbox container */
+  flex-direction: column; /* Stack image and text vertically */
+  justify-content: center; /* Center the image and text */
+  align-items: center; /* Center the content */
 }
 
 .gallery-item:hover {
   transform: scale(1.05); /* Slight zoom on hover */
 }
 
-/* Styling for the images */
-.gallery-image {
-  width: 100%;
-  height: 150px; /* Fixed height for uniformity */
-  object-fit: cover; /* Crop the image to fit the box without distortion */
-  border-radius: 10px; /* Rounded corners */
-}
-
-/* Title styling */
 h3 {
   margin-top: 10px;
   font-size: 1.1rem;
   color: #85c1d2;
+  text-align: center;
 }
 
+
+/* Art Piece Detail Page Styling */
+.art-piece-detail {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  font-size: 0.9rem; 
+  color: #987dc5;
+}
+
+.art-piece-image {
+  max-width: 90%;  /* Make sure the image doesn't exceed the screen width */
+  max-height: 80vh;  /* Limit the image height to prevent overflow */
+  object-fit: contain;  /* Keep the aspect ratio of the image */
+  margin-bottom: 10px;  /* Add some space below the image */
+}
+
+
+
+.navigation-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -10px;
+}
+
+.arrow {
+  font-size: 2rem;
+  color: var(--accent-color);
+  cursor: pointer;
+  text-decoration: none; /* Ensures no underline in normal state */
+  padding: 0 20px;
+  transition: color 0.3s ease;
+}
+
+.arrow:hover {
+  color:  #ffcb46;
+  text-decoration: none; /* Ensures no underline on hover as well */
+}
+
+/* Back to gallery button */
+.back-button {
+  display: inline-block;
+  background-color: var(--accent-color);
+  padding: 10px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 1.2rem;
+  margin-top: 0px;
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #ffcb46;
+  text-decoration: none; /* Ensures no underline on hover */
+}
