@@ -1,20 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Page Not Found</title>
-    <meta http-equiv="refresh" content="3;url=/" />
-    <script type="text/javascript">
-      var pathname = window.location.pathname;
-      if (!pathname.includes("/forestkids")) {
-        window.location.href = "/forestkids" + pathname;
-      } else {
-        window.location.href = "/forestkids";
-      }
-    </script>
-  </head>
-  <body>
-    <h1>Page Not Found</h1>
-    <p>Redirecting to homepage...</p>
-  </body>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="refresh" content="0;url=/forestkids/" />
+  <script>
+    // Redirect to the root and let React Router handle the routing.
+    window.location.href = "/forestkids" + window.location.pathname;
+  </script>
+</head>
+<body>
+  <h1>Redirecting...</h1>
+</body>
 </html>
