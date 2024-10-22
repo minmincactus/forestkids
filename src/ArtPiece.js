@@ -2,7 +2,7 @@ import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import bunnycloud from './assets/bunnycloud.png';  
 import amulet from './assets/Amulet.jpeg';
-import anthropology from './assets/Anthropology.png';
+import anthropology from './assets/anthropology.png';
 import articuno from './assets/articuno.png';
 import beanbean from './assets/beanbean.png';
 import butterfly from './assets/butterfly.png';
