@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta http-equiv="refresh" content="0;url=/forestkids/" />
   <script>
-    // Redirect to the root and let React Router handle the routing.
-    window.location.href = "/forestkids" + window.location.pathname;
+    // Extract the pathname and redirect to the correct route in the React app
+    var redirectTo = window.location.pathname.replace('/forestkids', '');
+    window.location.href = "/forestkids" + redirectTo;
   </script>
 </head>
 <body>
