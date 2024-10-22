@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta property="og:image" content="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Forest Kids"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <title>Forest Kids</title>
+    <script type="text/javascript">
+      // Redirect any 404 errors to index.html
+      var redirectTo = window.location.pathname;
+      if (!redirectTo.startsWith('/forestkids')) {
+        redirectTo = '/forestkids' + redirectTo;
+      }
+      window.location.replace("/forestkids/index.html?redirect=" + redirectTo);
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
