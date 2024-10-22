@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/forestkids/static/css/main.5b16f453.css",
+    "main.js": "/forestkids/static/js/main.7f76a015.js",
+    "static/js/453.d12028c7.chunk.js": "/forestkids/static/js/453.d12028c7.chunk.js",
+    "static/media/bunnycloud.png": "/forestkids/static/media/bunnycloud.bc9bf050b02a6207dca0.png",
+    "static/media/beanbean.png": "/forestkids/static/media/beanbean.8928f60d612342debdf1.png",
+    "static/media/articuno.png": "/forestkids/static/media/articuno.2312614982d2ccc4ae48.png",
+    "static/media/zapdo.png": "/forestkids/static/media/zapdo.dff7d2daf3617596284c.png",
+    "static/media/moltres.png": "/forestkids/static/media/moltres.902b952a03010f9aae12.png",
+    "static/media/tomatocats.jpg": "/forestkids/static/media/tomatocats.37f6d710dda60a04759f.jpg",
+    "static/media/Amulet.jpeg": "/forestkids/static/media/Amulet.a596cd50799c808a4d24.jpeg",
+    "static/media/pockethome.png": "/forestkids/static/media/pockethome.345e63b5d041adc466e7.png",
+    "static/media/onion.png": "/forestkids/static/media/onion.b75cb8f402fc91dcc915.png",
+    "static/media/dusty.jpg": "/forestkids/static/media/dusty.5fb5ef529f1a25010a56.jpg",
+    "static/media/logo.png": "/forestkids/static/media/logo.b48212829f6bf44e1019.png",
+    "static/media/mikupotato.jpg": "/forestkids/static/media/mikupotato.2b01012062e4aa4bb7bb.jpg",
+    "static/media/siamese.jpg": "/forestkids/static/media/siamese.c5c4df709549b28e7b4f.jpg",
+    "static/media/mikubag.jpg": "/forestkids/static/media/mikubag.4bb130f14f18ce6dde78.jpg",
+    "static/media/paintingAustralopithicus.jpeg": "/forestkids/static/media/paintingAustralopithicus.e203035543c961862e7e.jpeg",
+    "static/media/Anthropology.png": "/forestkids/static/media/Anthropology.07c637b69971428ce136.png",
+    "static/media/butterfly.png": "/forestkids/static/media/butterfly.5f22251e50473c0a1eed.png",
+    "static/media/background.jpg": "/forestkids/static/media/background.df6946a7f77543f1df7e.jpg",
+    "index.html": "/forestkids/index.html",
+    "main.5b16f453.css.map": "/forestkids/static/css/main.5b16f453.css.map",
+    "main.7f76a015.js.map": "/forestkids/static/js/main.7f76a015.js.map",
+    "453.d12028c7.chunk.js.map": "/forestkids/static/js/453.d12028c7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5b16f453.css",
+    "static/js/main.7f76a015.js"
+  ]
+}
